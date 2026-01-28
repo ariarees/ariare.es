@@ -1,1 +1,210 @@
-/* TODO */
+/* CV-specific styles - extends root.css */
+
+/* CV Header */
+.cv-header {
+  text-align: center;
+  background: linear-gradient(135deg, var(--bg-tertiary) 0%, var(--bg-secondary) 100%);
+  border: 2px solid var(--border-color);
+  padding: 2rem !important;
+}
+
+.cv-contact {
+  color: var(--text-secondary);
+  font-family: var(--font-mono);
+  font-size: 0.95rem;
+  margin-top: 1rem;
+  line-height: 1.8;
+}
+
+/* CV Sections */
+.cv-section {
+  margin-bottom: 2rem;
+}
+
+.cv-section:last-of-type {
+  margin-bottom: 0;
+}
+
+/* CV Items (for entries within sections) */
+.cv-item {
+  margin-bottom: 1.5rem;
+  padding-left: 0.5rem;
+  border-left: 2px solid var(--pastel-purple);
+  padding-bottom: 1rem;
+}
+
+.cv-item:last-child {
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.cv-item h4 {
+  color: var(--pastel-cyan);
+  margin-top: 0;
+  margin-bottom: 0.25rem;
+}
+
+.cv-item h4::before {
+  content: '→ ';
+  color: var(--pastel-green);
+}
+
+.cv-meta {
+  color: var(--text-secondary);
+  font-family: var(--font-mono);
+  font-size: 0.9rem;
+  margin-bottom: 0.75rem;
+  font-style: italic;
+}
+
+.cv-item p {
+  color: var(--text-primary);
+  margin-bottom: 0.5rem;
+}
+
+.cv-item ul {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.cv-item li {
+  color: var(--text-primary);
+  margin-bottom: 0.4rem;
+  line-height: 1.6;
+}
+
+/* Links in CV */
+.cv-item a,
+.cv-meta a,
+.cv-section a {
+  color: var(--pastel-cyan);
+  text-decoration: none;
+  transition: color 0.3s ease;
+  font-family: var(--font-mono);
+}
+
+.cv-item a:hover,
+.cv-meta a:hover,
+.cv-section a:hover {
+  color: var(--pastel-pink);
+  text-decoration: underline;
+}
+
+/* Download Section */
+.cv-download {
+  margin-top: 3rem;
+}
+
+.download-button {
+  cursor: pointer;
+  display: block;
+}
+
+.download-button:hover {
+  border-left-color: var(--pastel-green);
+}
+
+/* Back link in footer */
+.back-link {
+  display: inline-block;
+  color: var(--pastel-cyan);
+  text-decoration: none;
+  font-family: var(--font-mono);
+  padding: 0.5rem 1rem;
+  border: 1px solid var(--border-color);
+  border-radius: 6px;
+  transition: all 0.3s ease;
+  margin-bottom: 1rem;
+}
+
+.back-link:hover {
+  border-color: var(--pastel-cyan);
+  background: var(--bg-tertiary);
+  transform: translateX(-4px);
+}
+
+.back-link::before {
+  content: '';
+  margin-right: 0.5rem;
+}
+
+/* Print styles for CV page */
+@media print {
+  body {
+    background: white;
+    color: black;
+    padding: 0;
+  }
+
+  body::before {
+    display: none;
+  }
+
+  section {
+    box-shadow: none;
+    border: none;
+    background: white;
+    page-break-inside: avoid;
+  }
+
+  .cv-download,
+  footer {
+    display: none;
+  }
+
+  h1, h2, h3, h4 {
+    color: black;
+    -webkit-text-fill-color: black;
+  }
+
+  h1::before,
+  h2::before,
+  h3::before,
+  h4::before {
+    display: none;
+  }
+
+  a {
+    color: black;
+    text-decoration: underline;
+  }
+
+  .project-card {
+    border: 1px solid #ccc;
+    box-shadow: none;
+  }
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .cv-header {
+    padding: 1.5rem !important;
+  }
+
+  .cv-contact {
+    font-size: 0.85rem;
+  }
+
+  .cv-item {
+    padding-left: 0.25rem;
+  }
+}
+
+/* Enhanced readability for CV */
+.cv-section p {
+  line-height: 1.8;
+}
+
+.cv-section strong {
+  color: var(--pastel-purple);
+  font-weight: 600;
+}
+
+/* Section transitions */
+.cv-section {
+  transition: all 0.3s ease;
+}
+
+.cv-section:hover {
+  transform: translateY(-1px);
+}
