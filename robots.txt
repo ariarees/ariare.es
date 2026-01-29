@@ -1,4 +1,4 @@
 User-agent: *
 Disallow: 
 Disallow: /cgi-bin/
-Sitemap: https://doughmination.co.uk/sitemap.xml
+Sitemap: https://ariare.es/sitemap.xml
