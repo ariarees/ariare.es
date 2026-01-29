@@ -131,13 +131,22 @@
     <footer>
         <p>Built with passion, powered by caffeine</p>
         <div class="arch-badge">#archbtw</div>
+        <br>
+        <div class="view-badge"><span id="visits">...</span> total views!</div>
         <div class="copyright">
             <p>Copyright © 2026 Aria Rees</p>
-            
         </div>
     </footer>
+    
 
     <script src="assets/js/root.js"></script>
+     <script src="JS/index.js"></script>
+    <script>
+        function cb(response) {
+        document.getElementById('visits').innerText = response.value;
+        }
+        </script>
+        <script async src="https://abacus.jasoncameron.dev/hit/www.ariare.es/visits?callback=cb"></script>
 </body>
 
 </html>
