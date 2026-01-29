@@ -6,16 +6,17 @@
   --bg-secondary: #3d2f42;
   --bg-tertiary: #4d3d52;
   
-  --pastel-cyan: #a8dadc;
+  --pastel-fuck: #b2a8dc;
   --pastel-pink: #f1c0e8;
   --pastel-green: #b8e0d2;
   --pastel-purple: #d4c5f9;
   --pastel-yellow: #f9f3df;
   --pastel-blue: #cfe8fc;
+  --pastel-fuck: #b2a8dc;
   
   --text-primary: #e8e6e3;
   --text-secondary: #a8a5a0;
-  --text-accent: var(--pastel-cyan);
+  --text-accent: var(--pastel-fuck);
   
   --border-color: #3a3d45;
   --shadow: rgba(0, 0, 0, 0.3);
@@ -90,7 +91,7 @@ h1 {
   font-family: var(--font-mono);
   font-size: 2rem;
   font-weight: 700;
-  background: linear-gradient(135deg, var(--pastel-cyan) 0%, var(--pastel-purple) 100%);
+  background: linear-gradient(135deg, var(--pastel-fuck) 0%, var(--pastel-purple) 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -119,7 +120,7 @@ h2::before {
 h3 {
   font-family: var(--font-mono);
   font-size: 1.4rem;
-  color: var(--pastel-cyan);
+  color: var(--pastel-fuck);
   margin-bottom: 1rem;
   border-left: 4px solid var(--pastel-green);
   padding-left: 1rem;
@@ -176,7 +177,7 @@ li::before {
   display: block;
   background: var(--bg-tertiary);
   border: 1px solid var(--border-color);
-  border-left: 4px solid var(--pastel-cyan);
+  border-left: 4px solid var(--pastel-fuck);
   border-radius: 6px;
   padding: 1.5rem;
   margin-top: 1rem;
@@ -211,7 +212,7 @@ li::before {
 
 .project-card h4 {
   margin-top: 0;
-  color: var(--pastel-cyan);
+  color: var(--pastel-fuck);
 }
 
 .project-card:hover h4 {
@@ -249,7 +250,7 @@ footer {
 }
 
 .copyright a {
-  color: var(--pastel-cyan);
+  color: var(--pastel-fuck);
   text-decoration: none;
   transition: color 0.3s ease;
   font-family: var(--font-mono);
@@ -271,7 +272,7 @@ footer {
 }
 
 .arch-badge:hover {
-  border-color: var(--pastel-cyan);
+  border-color: var(--pastel-fuck);
   box-shadow: 0 0 20px rgba(168, 218, 220, 0.3);
   transform: scale(1.05);
 }
@@ -306,17 +307,17 @@ html {
 
 /* Selection styling */
 ::selection {
-  background: var(--pastel-cyan);
+  background: var(--pastel-fuck);
   color: var(--bg-primary);
 }
 
 ::-moz-selection {
-  background: var(--pastel-cyan);
+  background: var(--pastel-fuck);
   color: var(--bg-primary);
 }
 
 /* Link styling for better accessibility */
 a:focus {
-  outline: 2px solid var(--pastel-cyan);
+  outline: 2px solid var(--pastel-fuck);
   outline-offset: 2px;
 }
