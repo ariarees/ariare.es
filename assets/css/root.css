@@ -341,3 +341,31 @@ a:focus {
   outline: 2px solid var(--pastel-fuck);
   outline-offset: 2px;
 }
+
+/* Project contributors / credit */
+.project-credit {
+  margin-top: 0.75rem;
+  font-family: var(--font-mono);
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+  padding-left: 1rem;
+  border-left: 2px solid var(--pastel-green);
+  opacity: 0.9;
+}
+
+.project-credit::before {
+  content: '// ';
+  color: var(--pastel-purple);
+}
+
+.project-credit a {
+  color: var(--pastel-fuck);
+  text-decoration: none;
+  border-bottom: 1px dotted transparent;
+  transition: all 0.25s ease;
+}
+
+.project-credit a:hover {
+  color: var(--pastel-pink);
+  border-bottom-color: var(--pastel-pink);
+}
